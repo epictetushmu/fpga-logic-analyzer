@@ -1,0 +1,110 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Mon May 26 18:54:14 2025
+| Host         : gerojohn running 64-bit Ubuntu 24.04.2 LTS
+| Command      : report_methodology -file SX_methodology_drc_routed.rpt -pb SX_methodology_drc_routed.pb -rpx SX_methodology_drc_routed.rpx
+| Design       : SX
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 15
++-----------+----------+--------------------------+------------+
+| Rule      | Severity | Description              | Violations |
++-----------+----------+--------------------------+------------+
+| TIMING-23 | Warning  | Combinational loop found | 15         |
++-----------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_11/XLXI_5/XLXI_10_i_3/I0 and XLXI_11/XLXI_5/XLXI_10_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_11/XLXI_5/XLXI_11_i_4/I4 and XLXI_11/XLXI_5/XLXI_11_i_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_11/XLXI_5/XLXI_14_i_1/I1 and XLXI_11/XLXI_5/XLXI_14_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_11/XLXI_5/XLXI_8_i_3/I1 and XLXI_11/XLXI_5/XLXI_8_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_11/XLXI_6/XLXI_2/I0 and XLXI_11/XLXI_6/XLXI_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#6 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_11/XLXI_6/XLXI_4/I0 and XLXI_11/XLXI_6/XLXI_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#7 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_11/XLXI_9_i_4/I0 and XLXI_11/XLXI_9_i_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#8 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_14/XLXI_2_i_6/I3 and XLXI_14/XLXI_2_i_6/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#9 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_14/XLXI_3_i_4/I2 and XLXI_14/XLXI_3_i_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#10 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_2/XLXI_12/XLXI_11_i_3/I0 and XLXI_2/XLXI_12/XLXI_11_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#11 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_2/XLXI_12/XLXI_11_i_4__0/I0 and XLXI_2/XLXI_12/XLXI_11_i_4__0/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#12 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_2/XLXI_12/XLXI_16_i_4/I1 and XLXI_2/XLXI_12/XLXI_16_i_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#13 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_2/XLXI_12/XLXI_19_i_3/I4 and XLXI_2/XLXI_12/XLXI_19_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#14 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_2/XLXI_45/XLXI_2/I0 and XLXI_2/XLXI_45/XLXI_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#15 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between XLXI_2/XLXI_9_i_4__0/I0 and XLXI_2/XLXI_9_i_4__0/O to disable the timing loop
+Related violations: <none>
+
+
