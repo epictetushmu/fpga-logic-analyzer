@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../logicjunalayser.srcs/sources_1/new/capture_to_buffer.vhd" \
-"../../../../logicjunalayser.srcs/sim_1/new/tb_capture_to_buffer.vhd" \
-
-# Do not sort compile order
-nosort
