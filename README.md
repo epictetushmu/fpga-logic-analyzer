@@ -51,7 +51,7 @@ Logic Analyzr is a standalone, real-time digital signal monitoring and visualiza
 ## Getting Started
 
 1. **Hardware Requirements**:
-   - Nexys A7 FPGA Board by Digilent
+   - Nexys 2 FPGA Board by Digilent
    - VGA monitor
    - External signal sources (digital signals)
 
@@ -65,7 +65,7 @@ Logic Analyzr is a standalone, real-time digital signal monitoring and visualiza
       git clone https://github.com/Epictetus20/fpga-logic-analyzer.git
       ```
    2. Open the project in Vivado.
-   3. Compile the design and upload it to your Nexys A7 FPGA board.
+   3. Compile the design and upload it to your Nexys 2 FPGA board.
    4. Connect a VGA monitor to the board and external digital signals to the I/O ports.
    5. Power on the FPGA, and the waveforms will appear on the screen!
 
