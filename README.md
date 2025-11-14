@@ -1,49 +1,52 @@
-# FPGA Logic Analyzer
-
-Welcome to the **FPGA Logic Analyzer** project! This project implements a real-time digital signal monitoring tool using the **Nexys A7 FPGA Board**. The FPGA captures multiple input signals, processes them on the fly, and visually presents waveforms directly on a **VGA display**. This means you can perform signal analysis without needing an external oscilloscope—just plug in your signals and watch them appear in real-time on the screen.
+# Logic Analyzr (Implemented on FPGA)
+Logic Analyzr is a standalone, real-time digital signal monitoring and visualization platform. Built on the **Nexys2 FPGA board**, it harnesses on-chip Spartan-3E logic and native VGA output to capture multiple signals and present their waveforms instantly. No computer or external oscilloscope needed—just plug in your digital signals and analyze them on any VGA monitor.
 
 ## Features
 
 ### Graphical User Interface (GUI) Integration
-- **Waveform Zooming**: Zoom in and out of captured signals for detailed analysis.
-- **Cursor-Based Measurements**: Place cursors on waveforms to measure time intervals and signal durations.
-- **Customizable Display Settings**: Modify grid settings, color schemes, and scaling factors.
-- **Multi-Signal Display**: Visualize multiple signals simultaneously with clear differentiation.
-- **Trigger Event Indicators**: Highlight trigger points for easy reference and debugging.
-- **Interactive Controls**: Use FPGA push buttons or external inputs to modify settings in real-time.
+
+- Waveform Zooming: Pinpoint details in your captured data with zoomable waveforms.
+- Cursor-Based Measurements: Measure time intervals or durations using intuitive on-screen cursors.
+- Customizable Display: Tweak grid lines, colors, and scaling settings for a personalized view.
+- Multi-Signal Visualization: Overlay and distinguish multiple logic channels with clarity.
+- Trigger Markers: Spot events and transitions with on-screen highlights.
+- Interactive Controls: Adjust settings in real time using Nexys2 push-buttons or switches.
 
 ### Real-Time Signal Capture
-- **High-Speed Sampling**: Utilizes the FPGA's internal clock to ensure accurate waveform representation.
-- **Trigger Mechanism**: Detects edges and patterns to start signal recording at the right moment.
 
-### Display on VGA Monitor
-- **On-Screen Waveform Display**: Display waveforms directly on a **VGA monitor** without requiring an external PC.
-- **User-Controlled Parameters**: Adjust trigger levels and time scales with simple switches or buttons.
+- High-Speed Sampling: Utilizes the 50 MHz FPGA clock for accurate, responsive waveform acquisition.
+- Flexible Triggering: Configure edge or pattern triggers for precise capture moments.
+
+### Direct VGA Output
+
+- Standalone Display: Waveforms are rendered live to VGA—no PC or extra software required.
+- User Adjustable Settings: Change acquisition and display parameters with onboard controls.
 
 ## Hardware Specifications
 
-- **FPGA Chip**: Xilinx Artix-7 (XC7A35T)
-- **Clock Source**: 100 MHz onboard clock
-- **I/O Interfaces**: 40-pin expansion ports for signal input
-- **VGA Output**: 12-bit VGA to drive a 1024x768 display
-- **Memory**: Onboard SRAM for waveform storage
-- **User Controls**: Push-buttons and slide switches for adjusting settings
-- **Input Voltage Limitations**: Operates at 3.3V logic levels, 5V-tolerant inputs. Signals exceeding 5V must be level-shifted to avoid FPGA damage.
+- FPGA: Xilinx Spartan-3E (Nexys2)
+- Clock: 50 MHz onboard source
+- Inputs: 40-pin expansion header
+- VGA Output: 12-bit color, supports 640x480 or 1024x768
+- Memory: SRAM for buffering captured waveforms
+- Controls: Push-buttons and slide switches
+- Input Voltage: 3.3V logic (5V-tolerant inputs); >5V signals require level-shifting
 
 ## How It Works
 
-1. **Signal Capture**: Digital signals are fed into the FPGA through expansion ports.
-2. **Trigger System**: Edge detection logic (implemented in VHDL) monitors signal transitions and triggers data capture.
-3. **Data Buffering**: Captured signal data is stored in the FPGA's onboard SRAM for efficient processing.
-4. **VGA Controller**: The FPGA generates synchronization signals to map waveform data onto a 640x480 VGA display.
-5. **Display Logic**: Signals are rendered as pixel-based waveforms, with time divisions and voltage levels clearly marked.
+1. **Signal Capture:** Connect digital inputs to the Nexys2 header.
+2. **Trigger & Sampling:** User-defined trigger logic (edge/pattern) starts sample capture.
+3. **Data Buffering:** Onboard SRAM stores real-time sample data.
+4. **VGA Controller:** FPGA generates sync signals to draw captured waveforms on VGA.
+5. **Visualization Logic:** Pixel-level waveform rendering with clear time and logic grids.
 
-## Why This is Cool
+## Why Our Logic Analyzr is Cool
 
-- **Standalone Operation**: No computer is needed—just connect the FPGA to a VGA monitor.
-- **High-Speed Sampling**: Utilizes the Nexys A7’s clock to capture fast transitions.
-- **Customizable Features**: The design is expandable, allowing for future enhancements like UART/USB data export or cursor-based measurements.
-- **Affordable & Practical**: An FPGA-based alternative to expensive digital oscilloscopes and logic analyzers.
+- **Totally Independent:** No computer necessary—portable, self-contained signal analysis.
+- **Fast:** Captures quick transitions using fast onboard clocking.
+- **Expandable:** Modular design for adding features (UART/USB export, advanced UI controls).
+- **Affordable:** Brings powerful analysis to students, makers, and embedded engineers.
+
 
 ## Getting Started
 
