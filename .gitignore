@@ -1,0 +1,6 @@
+vivado_proj/
+build/
+*.bit
+*.jou
+*.log
+.Xil/
